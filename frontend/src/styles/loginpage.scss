@@ -1,0 +1,226 @@
+@font-face {
+    font-family: 'myPacifico' ;
+    src: url('../assets/fonts/Pacifico/Pacifico-Regular.ttf') format('truetype');
+ 
+}
+ @font-face {
+    font-family: 'myRoboto' ;
+    src: url('../assets/fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+ 
+ }
+
+html, body, html * {
+  font-family: 'myRoboto', sans-serif;
+}
+.divBody{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.divContent{
+    width: 100%;    
+    height: 100%;
+}
+.divLeftContainer{
+    height: 100%;
+   width: 40%;
+    float: left;
+    background-color: #004e92;  
+}
+.divRightContainer{
+    height: 100%;
+    width: 60%;
+    float: left;
+    background-color: #EFF4F7;
+}
+.divContentBox{
+    border-radius: 25px;
+    position: relative;
+    width: 60%;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 6px 6px 24px 18px #ccc;
+    left: 10%;
+    top: 25%;
+}
+.divContentBox-title{
+    width: calc(100% - 20px);
+    height: 40px;
+    padding: 10px;
+}
+.spnContentBox-title{
+    line-height: 35px;
+    vertical-align: middle;
+}
+.btnTitle{
+    width: 50%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+    border: 0;
+    background-color: #fff;
+    outline: none;
+}
+.active{
+    background-color: #3C89C7;
+    color: #fff;
+}
+.divInputdetails{
+    width: calc(100% - 20px);
+    height: 50%;
+    padding: 10px;
+}
+.inputText{
+    width: calc(100% - 50px);
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 15px;
+    border: 2px solid #ccc;
+    margin-top: 30px;
+}
+.inputText-small{
+    width: calc(100% - 299px);
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 15px;
+    border: 2px solid #ccc;
+    margin-top: 30px;
+    margin-right: 15px;
+}
+input[type="text"]:focus {
+    border-color: #3C89C7;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  }   
+.divButtons{
+    margin-top: 10px;
+    height: 20%;
+    text-align: center;
+    padding: 10px;
+}
+.buttonLogin{
+    padding: 10px;
+    border-radius: 20px;
+    width: 100px;
+    border: none;
+    color: #fff;
+    background-color: #019267;
+    cursor: pointer;
+}
+.divLogoContent{
+    position: relative;
+    top: 35%;
+    left: 20%;
+}
+.divImgContainer{
+    position: relative;
+    top: 35%;
+    width: 100px;
+}
+.img-books{
+    height: 300px;
+}
+.spn-logo{
+    color: white;
+    font-size: 80px;
+    font-family: myPacifico;
+}
+.div-logo{
+    text-align: center;
+}
+:root {
+	--primary-color: #185ee0;
+	--secondary-color: #3C89C7;
+}
+.glider {
+	position: absolute;
+	display: flex;
+	height: 100%;
+	width: 50%;
+	background-color: var(--secondary-color);
+	z-index: 1;
+	border-radius: 99px; 
+	transition: 0.25s ease-out;
+}
+.transform100{
+    transform: translateX(100%);
+}
+.transform0{
+    transform: translateX(0);
+}
+.tabs {
+	display: flex;
+	position: relative;
+	background-color: #fff;
+	border-radius: 99px;
+}
+
+
+.tab {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 54px;
+	width: 50%;
+	font-size: 1.25rem;
+	font-weight: 500;
+	border-radius: 99px; 
+	cursor: pointer;
+	transition: color 0.15s ease-in;
+    z-index: 22;
+}
+.white{
+    color: #fff;
+}
+.custom-dropdown{
+    border-radius: 5px;
+    width: 230px;
+    position: relative;
+    padding-bottom: 5px;
+    display: inline-block;
+    padding-right: 15px;
+}
+.custom-dropdown-selection{
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 10px 16px;
+    cursor: pointer;
+    position: relative;
+    border: 2px solid #ccc;
+    height: 28px;
+    font-family: 'myRoboto', sans-serif;
+}
+.custom-dropdown-selection::after{
+    display: block;
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-right: 3px solid #000;
+    border-bottom: 3px solid #000;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 15px;
+    top: 12px;
+}
+.custom-dropdown .items-holder{
+    border-radius: 6px;
+    background-color: #fff;
+    position: absolute;
+    top: 100%;
+    width: 230px;
+    border: 2px solid #ccc;
+    font-size: 15px;
+}
+
+.custom-dropdown .items-holder .dropdown-item{
+    padding: 10px 16px;
+    cursor: pointer;
+}
+
+.custom-dropdown .items-holder .dropdown-item:hover{
+    background-color: #3C89C7;
+    color: #fff;
+}
+
